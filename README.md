@@ -1,22 +1,15 @@
-# Gaussian Splatting Godot Implementation
+# entities-godot-3dgs
 
-This project implements initial support for KHR_gaussian_splatting extension in Godot Engine.
+An editor addon that imports glTF files carrying the KHR_gaussian_splatting extension and renders their Gaussian splats.
 
-https://github.com/KhronosGroup/glTF/pull/2490
+## What it is for
 
- - [x] Successfully packed degree 3 Spherical Harmonics into the Godot Engine vertex attributes
- - [ ] Debugging color reproduction
- - [x] Hard coded focal length calculation
- - [ ] Missing sorting splats by distance for correct blending
+The addon packs each splat's position, scale, rotation, opacity and degree-3 spherical harmonics into vertex attributes and draws the splats with a Gaussian falloff. The extension is proposed in [glTF pull request 2490](https://github.com/KhronosGroup/glTF/pull/2490).
 
-## Features
+## Build and run
 
-- Loads glTF files with KHR_gaussian_splatting extension
-- Renders Gaussian splats as billboards with basic Gaussian falloff
-- Supports position, scale, rotation, opacity, and spherical harmonics (degree 3)
+Open the project in the editor and run the main scene.
 
-## Usage
+## Licence
 
-1. Open the project in Godot 4.6+
-2. Import your glTF file with Gaussian splats
-3. Run the scene
+MIT; see LICENSE.
